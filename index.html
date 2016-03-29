@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $.getJSON("http://cooper-union-search-proxy.herokuapp.com/twitter/search/homesick", function(response){
+        console.log(response.statuses[0].user.location);
+
+        for(var i=0; i<response.statuses[i].user.location.length; i++) {
+
+          if((response.statuses[i].user.location.search(",")>-1)) {
+            $("li:nth-child("+(i+1)+")").append(response.statuses[i].user.location);
+          }
+
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Right now someone is feeling homesick for</h1>
+    <div class="locations">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+
+  </body>
+</html>

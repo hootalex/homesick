@@ -4,13 +4,12 @@
     <title>Homesick</title>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script>
-      $.getJSON("http://cooper-union-search-proxy.herokuapp.com/twitter/search/homesick", function(response){
+      $.getJSON("http://cooper-union-search-proxy.herokuapp.com/twitter/search/homesick?count=100", function(response){
         console.log(response.statuses[0].user.location);
 
-        for(var i=0; i<response.statuses[i].user.location.length; i++) {
-
-          if((response.statuses[i].user.location.search(",")>-1)) {
-            $("li:nth-child("+(i+1)+")").append(response.statuses[i].user.location);
+        for(var i=0; i<50; i++) {
+if ((response.statuses[i].user.location.length>0)&&(response.statuses[i].user.location.search(",")>-1)) {
+            $("ul").append("<li>"+response.statuses[i].user.location+"</li>");
           }
 
         }
@@ -21,16 +20,6 @@
     <h1>Right now someone is feeling homesick for</h1>
     <div class="locations">
     <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
     </ul>
   </div>
 

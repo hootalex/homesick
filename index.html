@@ -2,25 +2,44 @@
 <html>
   <head>
     <title>Homesick</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script>
+    $(document).ready(function() {
+
+$("#toggle").click(function() {
+
+    $(".locations").toggleClass("show");
+    $("h1").toggleClass("hide");
+  });
+      });
+    </script>
+    <script>
       $.getJSON("http://cooper-union-search-proxy.herokuapp.com/twitter/search/homesick?count=100", function(response){
-        console.log(response.statuses[0].user.location);
+        ;
 
         for(var i=0; i<50; i++) {
 if ((response.statuses[i].user.location.length>0)&&(response.statuses[i].user.location.search(",")>-1)) {
             $("ul").append("<li>"+response.statuses[i].user.location+"</li>");
-          }
 
+          }
         }
+        var locationarray = (response.statuses[i].user.location);
+        var firstlist = $(".locations li:nth-child(1)");
+        $("h1").append(firstlist);
+
       });
     </script>
   </head>
   <body>
     <h1>Right now someone is feeling homesick for</h1>
+    <p id="toggle">...</p>
     <div class="locations">
+      <p>Recents</p>
     <ul>
     </ul>
+    <p><i class="fa fa-twitter"></i></p>
   </div>
 
   </body>

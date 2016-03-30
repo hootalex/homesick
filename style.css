@@ -4,7 +4,6 @@ html {
 background-color: #404F58;
 font-smoothing: antialiased;
 -webkit-font-smoothing: antialiased;
--webkit-backface-visibility: hidden;
 }
 
 li {
@@ -20,7 +19,7 @@ li {
   margin-left: -20px;
   transform: translate(-50%, -50%);
   opacity: 0;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   width: 80%;
   transition: 1s;
 }
@@ -110,12 +109,13 @@ h1 li {
     100% {opacity: 0; margin-left: -1000px}
 }
 
-
+img {
+  z-index: -1;
+}
 #cloudone {
   -webkit-filter: blur(25px);
 	filter: blur(25px);
   width: 130%;
-  z-index: -1;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -130,7 +130,6 @@ h1 li {
   -webkit-filter: blur(25px);
 	filter: blur(25px);
   width: 130%;
-  z-index: -1;
   position: fixed;
   top: 40%;
   left: 50%;
@@ -145,7 +144,6 @@ h1 li {
   -webkit-filter: blur(25px);
 	filter: blur(25px);
   width: 100%;
-  z-index: -1;
   position: fixed;
   top: 70%;
   left: 50%;

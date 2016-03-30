@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Fondamento:400italic,400);
 
 html {
-background-color: #3E3F42;
+background-color: #404F58;
 font-smoothing: antialiased;
 -webkit-font-smoothing: antialiased;
 }
@@ -105,7 +105,7 @@ h1 li {
 
 @keyframes fog {
     0% {opacity: 0; margin-left: 1000px;}
-    50% {opacity: 1; margin-left: 0px}
+    50% {opacity: .3; margin-left: 0px}
     100% {opacity: 0; margin-left: -1000px}
 }
 
@@ -113,14 +113,14 @@ h1 li {
 #cloudone {
   -webkit-filter: blur(25px);
 	filter: blur(25px);
-  width: 100%;
+  width: 110%;
   z-index: -1;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   animation-name: fog;
-  animation-duration: 40s;
+  animation-duration: 25s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -128,14 +128,31 @@ h1 li {
 #cloudtwo {
   -webkit-filter: blur(25px);
 	filter: blur(25px);
-  width: 100%;
+  width: 110%;
   z-index: -1;
   position: fixed;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   animation-name: fog;
-  animation-duration: 30s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+
+#cloudthree {
+  -webkit-filter: blur(25px);
+	filter: blur(25px);
+  width: 90%;
+  z-index: -1;
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: fog;
+  animation-duration: 18s;
+  animation-delay: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  opacity: 0;
 }

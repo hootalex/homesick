@@ -12,7 +12,6 @@ li {
 
 .locations {
   position: fixed;
-  width: 100%;
   top: 50%;
   left: 50%;
   margin-left: -20px;
@@ -74,6 +73,8 @@ h1 {
   transform: translate(-50%, -50%);
   padding-bottom: 100px;
   transition: 1s;
+  animation-name: fog;
+  animation-duration: 2s;
 }
 
 #toggle:hover {
@@ -92,14 +93,15 @@ img {
   display: none;
 }
 
-h1 li {
+h1 {
+  text-transform: uppercase;
   text-align: center;
-  font-family: URWVenusW01-MediumItalic;
+  font-family: Univers Lt Std;
   font-weight: normal;
-  font-size: 150px;
-  font-style: italic;
-  color: white;
-  /*letter-spacing: .03em;*/
+  font-size: 90px;
+  color: blue;
+  letter-spacing: .05em;
+  font-weight: 600;
 }
 
 @keyframes load {
@@ -109,9 +111,10 @@ h1 li {
 }
 
 @keyframes fog {
-    0% {opacity: 0; margin-left: 1000px;}
-    50% {opacity: .1; margin-left: 0px}
-    100% {opacity: 0; margin-left: -1000px}
+    0% {opacity: 0;;}
+    40% {opacity: 0}
+    41% {opacity: 1}
+    100% {opacity: 1;}
 }
 
 img {

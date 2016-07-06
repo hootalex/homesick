@@ -94,12 +94,12 @@ img {
 
 h1 li {
   text-align: center;
-  font-family: URWVenusW01-MediumItalic, Arial, sans-serif;
+  font-family: Kabel Lt Std;
   font-weight: normal;
-  font-size: 150px;
-  font-style: italic;
+  font-size: 120px;
   color: white;
-  /*letter-spacing: .03em;*/
+  /*text-transform: uppercase;
+  letter-spacing: .03em;*/
 }
 
 @keyframes load {

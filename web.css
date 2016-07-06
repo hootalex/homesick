@@ -1,5 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Fondamento:400italic,400);
+
 html {
-background-color: black;
+background-color: #404F58;
 font-smoothing: antialiased;
 -webkit-font-smoothing: antialiased;
 }
@@ -26,7 +28,7 @@ li {
   padding: 0;
   margin: auto;
   text-align: center;
-  font-family: Futura;
+  font-family: Fondamento;
   font-weight: normal;
   font-size: 20px;
   font-style: italic;
@@ -35,7 +37,7 @@ li {
 
 p {
   color: #9F8263;
-  font-family: Futura;
+  font-family: Fondamento;
   font-weight: 400;
   font-size: 30px;
   font-style: normal;
@@ -62,10 +64,10 @@ p {
 
 h1 {
   text-align: center;
-  font-family: Univers Lt Std;
+  font-family: Fondamento;
   font-weight: 400;
   font-size: 30px;
-  color: black;
+  color: #9F8263;
   width: 90%;
   position: fixed;
   top: 50%;
@@ -73,8 +75,6 @@ h1 {
   transform: translate(-50%, -50%);
   padding-bottom: 100px;
   transition: 1s;
-  animation-name: fog;
-  animation-duration: 2s;
 }
 
 #toggle:hover {
@@ -86,22 +86,15 @@ h1 {
   animation-name: load;
   animation-duration: 2s;
   animation-iteration-count: 1;
-  display: none;
 }
 
-img {
-  display: none;
-}
-
-h1 {
-  text-transform: uppercase;
+h1 li {
   text-align: center;
-  font-family: Univers Lt Std;
+  font-family: Fondamento;
   font-weight: normal;
-  font-size: 90px;
-  color: blue;
-  letter-spacing: .05em;
-  font-weight: 600;
+  font-size: 100px;
+  font-style: italic;
+  color: #C5B49B;
 }
 
 @keyframes load {
@@ -111,18 +104,15 @@ h1 {
 }
 
 @keyframes fog {
-    0% {opacity: 0;;}
-    40% {opacity: 0}
-    41% {opacity: 1}
-    100% {opacity: 1;}
+    0% {opacity: 0; margin-left: 1000px;}
+    50% {opacity: .1; margin-left: 0px}
+    100% {opacity: 0; margin-left: -1000px}
 }
 
 img {
   z-index: -1;
 }
 #cloudone {
-  -webkit-filter: blur(25px);
-	filter: blur(25px);
   width: 130%;
   position: fixed;
   top: 50%;
@@ -135,8 +125,6 @@ img {
 }
 
 #cloudtwo {
-  -webkit-filter: blur(25px);
-	filter: blur(25px);
   width: 130%;
   position: fixed;
   top: 40%;
@@ -149,8 +137,6 @@ img {
 }
 
 #cloudthree {
-  -webkit-filter: blur(25px);
-	filter: blur(25px);
   width: 100%;
   position: fixed;
   top: 70%;

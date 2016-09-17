@@ -160,3 +160,30 @@ img {
   animation-timing-function: linear;
   opacity: 0;
 }
+
+.rightnow {
+font-family: Kabel Lt Std;
+font-weight: normal;
+font-size: 50px;
+position: absolute;
+width: 99%;
+height: 200px;
+background-color: black;
+z-index: 999;
+color: white;
+text-align: center;
+padding-top: 42vh;
+animation-name: reveal;
+animation-duration: 8s;
+animation-fill-mode: forwards;
+}
+
+@keyframes reveal {
+    0% {opacity: 0; color: white;}
+    9% {opacity: 0; color: white;}
+    10% {opacity: 1; color: white;}
+    80% {opacity: 1; color: white;}
+    81% {opacity: 1; color: black;}
+    99% {opacity: 1; color: black;}
+    100% {opacity: 0; color: black;}
+}

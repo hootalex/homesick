@@ -1,3 +1,13 @@
+@font-face {
+	font-family: 'kb';
+	src: url('kb.eot');
+	src: url('kb.eot?#iefix') format('embedded-opentype'),
+		url('kb.woff') format('woff'),
+		url('kb.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 html {
 background-color: black;
 font-smoothing: antialiased;
@@ -94,7 +104,7 @@ img {
 
 h1 li {
   text-align: center;
-  font-family: Kabel Lt Std;
+  font-family: 'kb';
   font-weight: normal;
   font-size: 120px;
   color: white;
@@ -162,7 +172,7 @@ img {
 }
 
 .rightnow {
-font-family: Kabel Lt Std;
+font-family: 'kb';
 font-weight: normal;
 font-size: 50px;
 position: absolute;

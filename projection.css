@@ -12,6 +12,8 @@ html {
 background-color: black;
 font-smoothing: antialiased;
 -webkit-font-smoothing: antialiased;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
 }
 
 li {

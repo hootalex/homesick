@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<title>Polyphony</title>
+<meta name="viewport" content="width=320, initial-scale=1.0">
+<script>
+jQuery.easing.def = "string";
+
+</script>
+<style>
+html, body {
+background-color: black;
+padding: 0;
+margin: 0;
+margin: auto;
+text-align: center;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 12px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+svg {
+  height: 700px;
+}
+
+.path {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 200;
+  animation: dash 45s infinite cubic-bezier(0.670, 0.005, 0.200, 1.000);
+}
+@keyframes scroll {
+  0% {
+    padding-left: -50px;
+  }
+  100% {
+    padding-left: 50px;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    opacity: 1;
+  }
+  50% {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 5;
+    opacity: 1;
+  }
+  100% {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 2000;
+    opacity: 0;
+  }
+}
+</style>
+<body>
+  <svg version="1.1" class="path" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+ width="1280px" height="800px" viewBox="0 0 1280 800" enable-background="new 0 0 1280 800" xml:space="preserve">
+<path fill="none" stroke="blue" stroke-width="2" stroke-miterlimit="10" d="M86.619,112.104
+c49.498,6,101.995,19.499,151.493,16.5c-9-12-22.499-22.499-35.998-31.499"/>
+<path fill="none" stroke="blue" stroke-width="2" stroke-miterlimit="10" d="M238.111,130.104
+c-12,17.999-25.499,32.998-38.998,49.497"/>
+<path fill="none" stroke="blue" stroke-width="2" stroke-miterlimit="10" d="M230.612,281.596c61.497,0,121.494,1.5,182.991-3"/>
+<path fill="none" stroke="blue" stroke-width="2" stroke-miterlimit="10" d="M391.104,238.098
+c13.5,13.5,28.499,25.499,41.998,38.998c-12,9-25.499,19.499-35.998,29.999"/>
+<path fill="none" stroke="blue" stroke-width="2" stroke-miterlimit="10" d="M178.114,431.588
+c82.496,13.5,175.491-4.499,257.987-5.999"/>
+<path fill="none" stroke="blue" stroke-width="2" stroke-miterlimit="10" d="M401.603,395.59
+c23.999,12,50.998,17.999,76.496,29.999c-4.5,8.999-13.499,14.999-22.499,19.499"/>
+<path fill="none" stroke="blue" stroke-width="2" stroke-miterlimit="10" d="M302.608,365.591
+c109.495,6,223.489-28.499,331.483-40.498c52.498-6,103.495-10.5,155.993-15"/>
+<path fill="none" stroke="blue" stroke-width="2" stroke-miterlimit="10" d="M754.086,272.596
+c17.999,13.5,34.498,26.999,53.997,38.998c-6,12-19.499,19.499-28.499,28.499"/>
+<path fill="none" stroke="blue" stroke-width="2" stroke-miterlimit="10" d="M353.605,670.076
+c76.496,10.5,161.992-13.499,236.988-20.999c76.496-7.499,170.991,6,239.988-31.498c46.497-25.499,89.995-89.996,5.999-86.996
+c-28.498,1.5-53.997,20.999-26.998,49.498c25.498,28.498,116.994,22.499,152.992,22.499c19.499,0,38.998-3,58.497-4.5"/>
+<path fill="none" stroke="blue" stroke-width="2" stroke-miterlimit="10" d="M995.573,575.581
+c14.999,11.999,35.998,23.999,46.498,38.998c-9,7.5-19.499,13.499-29.999,19.499"/>
+<path fill="none" stroke="blue" stroke-width="2" stroke-miterlimit="10" d="M634.091,134.603c110.995,4.5,223.489,0,334.484,9"
+/>
+<path fill="none" stroke="blue" stroke-width="2" stroke-miterlimit="10" d="M938.576,112.104
+c9,13.5,20.999,23.999,34.498,34.499c-10.499,14.999-35.998,22.499-52.497,34.498"/>
+<path fill="none" stroke="blue" stroke-width="2" stroke-miterlimit="10" d="M829.082,424.089
+c106.494,0,218.988,5.999,322.483-14.999"/>
+<path fill="none" stroke="blue" stroke-width="2" stroke-miterlimit="10" d="M1108.067,385.091
+c16.5,9,34.499,17.999,50.998,26.998c-4.5,15-17.999,28.499-29.999,40.498"/>
+<path fill="none" stroke="blue" stroke-width="2" stroke-miterlimit="10" d="M118.117,593.58c58.497,0,116.994-1.5,173.991-4.5
+c19.499,0,46.498,1.5,62.997-3c-19.499-22.498-52.498-38.998-79.496-50.997"/>
+<path fill="none" stroke="blue" stroke-width="2" stroke-miterlimit="10" d="M349.106,584.58
+c-19.5,26.999-44.998,47.998-67.497,70.497"/>
+</svg>
+</body>
+</html>

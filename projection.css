@@ -108,6 +108,9 @@ h1 li {
   font-weight: normal;
   font-size: 120px;
   color: white;
+	animation-name: title;
+	animation-duration: 30s;
+	animation-fill-mode: forwards;
   /*text-transform: uppercase;
   letter-spacing: .03em;*/
 }
@@ -116,6 +119,15 @@ h1 li {
     0% {color: #9F8263; letter-spacing: 0;}
     50% {color: white; letter-spacing: 20px; padding-left: 20px;}
     100% {color: #9F8263; letter-spacing: 0;}
+}
+
+@keyframes title {
+    0% {color: black;}
+		10% {color: black}
+		13% {color: white}
+		70% {color: white}
+		98% {color: white}
+		100% {color: black}
 }
 
 @keyframes fog {
@@ -174,7 +186,7 @@ img {
 .rightnow {
 font-family: 'kb';
 font-weight: normal;
-font-size: 50px;
+font-size: 100px;
 position: absolute;
 width: 99%;
 height: 200px;
@@ -191,7 +203,7 @@ animation-fill-mode: forwards;
 @keyframes reveal {
     0% {opacity: 0; color: white;}
     9% {opacity: 0; color: white;}
-    10% {opacity: 1; color: white;}
+    12% {opacity: 1; color: white;}
     80% {opacity: 1; color: white;}
     81% {opacity: 1; color: black;}
     99% {opacity: 1; color: black;}

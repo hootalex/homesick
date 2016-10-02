@@ -23,14 +23,17 @@ a {
   text-decoration: none;
 }
 
-svg {
+/*svg {
   width: 900px;
   position: fixed;
- top: 50%;
- left: 50%;
- /* bring your own prefixes */
- transform: translate(-50%, -50%);
+}*/
+
+
+.svgdiv {
+  width: 100%;
+
 }
+
 
 .path {
   stroke-dasharray: 100;
@@ -65,6 +68,7 @@ svg {
 }
 </style>
 <body>
+  <div class="svgdiv">
   <svg version="1.1" class="path" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
  viewBox="0 0 1280 800" enable-background="new 0 0 1280 800" xml:space="preserve">
 <path fill="none" stroke="blue" stroke-width="2" stroke-miterlimit="10" d="M86.619,112.104
@@ -100,5 +104,6 @@ c19.499,0,46.498,1.5,62.997-3c-19.499-22.498-52.498-38.998-79.496-50.997"/>
 <path fill="none" stroke="blue" stroke-width="2" stroke-miterlimit="10" d="M349.106,584.58
 c-19.5,26.999-44.998,47.998-67.497,70.497"/>
 </svg>
+</div>
 </body>
 </html>

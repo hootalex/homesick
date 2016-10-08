@@ -1,4 +1,4 @@
-# Homesick Twitter
+# Homesick
 
 Shows where people are feeling homesick on Twitter. http://hootalex.github.io/homesick/
 

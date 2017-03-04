@@ -1,5 +1,7 @@
 # Homesick
 
+(fd up right now because I was using it for public projections. I'll clean it up later.
+
 Shows where people are feeling homesick on Twitter. http://hootalex.github.io/homesick/
 
  * Searches Twitter for tweets containing "homesick"
